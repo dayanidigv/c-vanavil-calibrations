@@ -24,7 +24,7 @@
   var sticky = $("#sticky-header");
   wind.on("scroll", function () {
     var scroll = wind.scrollTop();
-    if (scroll < 100) {
+    if (scroll < 120) {
       sticky.removeClass("sticky");
     } else {
       sticky.addClass("sticky");

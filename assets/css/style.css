@@ -62,8 +62,9 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   position: fixed !important;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14901960784313725);
-  background: var(--primary-color) !important;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.14901960784313725);
+  /* background: var(--primary-color) !important; */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   transition: 0.5s !important;
   z-index: 22;
   -webkit-animation: 300ms running fadeInDown;
@@ -164,7 +165,6 @@ a.mdy-hover:hover:before {
   position: relative;
   z-index: 1;
   transition: 0.5s;
-  margin: 0 9px 0 14px;
 }
 
 .mediic-button a img {
@@ -374,7 +374,7 @@ ul.sub-menu li:hover a span {
 }
 
 .hero-content h1 {
-  font-size: 65px;
+  font-size: 32px;
   font-weight: 800;
   line-height: 81px;
   padding: 8px 0 27px;
@@ -410,6 +410,7 @@ ul.sub-menu li:hover a span {
   backdrop-filter: blur(12px);
   overflow: hidden;
   display: inline-block;
+  width: 100%;
 }
 
 .mediic-service-inner-bx {
@@ -741,12 +742,12 @@ span.wood-animation img {
 }
 
 .about-icon {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 50px;
+  height: 50px;
+  /* line-height: 100px; */
   text-align: center;
   border-radius: 10px;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   display: inline-block;
   float: left;
   margin-right: 20px;
@@ -783,7 +784,6 @@ span.wood-animation img {
   position: relative;
   z-index: 1;
   transition: 0.5s;
-  margin: 0 9px 0 14px;
 }
 
 .mediic-button a img {
@@ -882,7 +882,7 @@ span.wood-animation img {
 
 .services-section {
   padding: 230px 0 90px;
-  background: url(../images/resource/motivation-bg.jpg);
+  background: url(../images/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -891,7 +891,7 @@ span.wood-animation img {
 .service-single-box {
   padding: 50px 35px 55px;
   margin-bottom: 30px;
-  background: var(--secondary-color);
+  background: var(--body-color);
   border-radius: 20px;
   position: relative;
   z-index: 1;
@@ -2243,7 +2243,6 @@ li.blg-admin i {
   font-size: 17px;
   background-color: rgba(255, 255, 255, 0.30196078431372547);
   border: 2px solid #ffffff;
-  margin: 30px 0 0;
   transition: 0.5s;
 }
 
@@ -2341,7 +2340,7 @@ li.blg-admin i {
 }
 
 .style-2 .subscribe-title h1 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 38px;
   padding-left: 30px;
@@ -2441,7 +2440,7 @@ a.mediic-btn:hover {
 
 .footer-section {
   padding: 165px 0 0px;
-  background: url(../images/resource/footer-bg.jpg);
+  background: #99bde3;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2743,9 +2742,8 @@ label.widget-check {
 <!-- ============================================================== -->*/
 
 .breatcome-section {
-  background: url(../images/resource/breatcome.png);
-  background-size: contain;
-  background-position: center;
+  background: url(../images/banner.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   height: 420px;
 }
@@ -2961,6 +2959,28 @@ span.fill {
 <!-- ============================================================== -->
 <!-- Mediken Start Appoinment Section-->
 <!-- ============================================================== -->*/
+
+
+ul.Appoinment li {
+  display: block;
+  list-style: none;
+  position: relative;
+  font-family: "DM Sans";
+  color: var(--primary-color);
+  padding: 0 0px 20px 25px;
+  position: relative;
+}
+
+ul.appoinment li:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
 
 .mediic-appoinment {
   background-image: url(../images/resource/appoinment.png);
@@ -5206,7 +5226,7 @@ span.flaticon-multiply i {
   height: 48px;
 }
 
-.loader:before,
+/* .loader:before,
 .loader:after {
   content: "";
   display: block;
@@ -5216,11 +5236,11 @@ span.flaticon-multiply i {
   left: 0;
   top: 0;
   animation: weld-rotate 2s infinite ease-in;
-}
-.loader:before {
+} */
+/* .loader:before {
   border-color: transparent transparent transparent var(--secondary-color);
   animation-delay: 0.5s;
-}
+} */
 @keyframes weld-rotate {
   0%,
   25% {
