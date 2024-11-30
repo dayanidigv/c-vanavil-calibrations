@@ -1,6 +1,5 @@
 /* Normal desktop :1300px. */
-@media (min-width: 1371px) and (max-width: 1600) {
-}
+@media (min-width: 1371px) and (max-width: 1600) {}
 
 /* large Desktop */
 
@@ -33,11 +32,12 @@
   .logo a img {
     width: 100%;
   }
+
   nav.mediic_menu {
     text-align: left;
   }
 
-  .mediic_menu > ul > li > a {
+  .mediic_menu>ul>li>a {
     padding: 0px 11px;
     margin: 16px 0px;
   }
@@ -55,6 +55,7 @@
   .hero-thumb {
     left: 52px;
   }
+
 
   .mediic-section-title h1 {
     font-size: 45px;
@@ -259,13 +260,16 @@
   .logo a img {
     width: 100%;
   }
+
   nav.mediic_menu {
     text-align: left;
   }
+
   ul.nav_scroll {
     padding: 0 22px 0 28px;
   }
-  .mediic_menu > ul > li > a {
+
+  .mediic_menu>ul>li>a {
     font-size: 14px;
     padding: 0px 7px;
     margin: 15px 0px;
@@ -306,6 +310,7 @@
     font-size: 25px;
     line-height: 55px;
   }
+
   .hero-thumb {
     top: 52px;
     left: 0;
@@ -421,6 +426,7 @@
   .team-content h4 {
     font-size: 20px;
   }
+
   /* Blog Section */
 
   .blogs-category ul li {
@@ -502,6 +508,7 @@
   .m_v-ssion-desc p {
     font-size: 16px;
   }
+
   /* Testimonial */
 
   .style-2 .testi-single-box {
@@ -525,6 +532,7 @@
   .services-desc p {
     font-size: 16px;
   }
+
   /* Details Page  */
   .mediic-icons {
     float: inherit;
@@ -902,6 +910,7 @@
   .style-3.about-section .about-thumb {
     padding-bottom: 30px;
   }
+
   /* Service Inner Page */
 
   .single-services-box {
@@ -915,6 +924,7 @@
   .services-desc p {
     font-size: 16px;
   }
+
   /* Details Page  */
   .mediic-icons {
     float: inherit;
@@ -1018,9 +1028,11 @@
   .upp.style-2 .user-name h6 {
     font-size: 15px;
   }
+
   .sticky {
     z-index: 2;
   }
+
   /*  */
 }
 
@@ -1059,6 +1071,10 @@
   .hero-thumb {
     top: 153px;
     left: 0;
+  }
+
+  .hero-thumb img {
+    width:80%;
   }
 
   /* Brand Section */
@@ -1244,6 +1260,7 @@
   .footer-thumb1 {
     display: none;
   }
+
   /******************************
   <--Inner Page Section-->  
   ********************************/
@@ -1339,6 +1356,7 @@
   .upp.style-2 .testi-desc p {
     font-size: 18px;
   }
+
   .sticky {
     z-index: 2;
   }
@@ -1352,9 +1370,13 @@
 }
 
 /* small mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 599px) {
+@media only screen and (min-width: 480px) and (max-width: 600px) {
   .sticky {
     position: absolute !important;
+  }
+
+  #sticky-header{
+    display: none;
   }
 
   .mediic_nav_manu {
@@ -1387,6 +1409,11 @@
   .hero-thumb {
     top: 155px;
     left: 0;
+  }
+
+  .hero-thumb img {
+    width:100%;
+    margin-top: -200px;
   }
 
   /* Brand Section */
@@ -1756,6 +1783,7 @@
   .upp.style-2 .testi-desc p {
     font-size: 18px;
   }
+
   .sticky {
     z-index: 2;
   }
@@ -1764,9 +1792,13 @@
 }
 
 /* small mobile :320px. */
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .sticky {
     position: absolute !important;
+  }
+
+  #sticky-header{
+    display: none;
   }
 
   .mediic_nav_manu {
@@ -1774,13 +1806,14 @@
   }
 
   /* Hero Section */
-
   .hero-section {
     background-position: center;
     background-size: cover;
     height: 1076px;
-    margin-top: 60px;
+  }
 
+  .hero-section .hero-content{
+    margin-top: -200px;
   }
 
   .hero-content h5 {
@@ -1820,7 +1853,10 @@
   }
 
   .hero-thumb img {
-    width: 100%;
+    width:50%;
+    right: 0%;
+    position: absolute;
+    margin-top: -200px;
   }
 
   .hero-shape2 {
@@ -1927,7 +1963,7 @@
     width: 100%;
     border-radius: 42px;
     text-align: center;
-}
+  }
 
   .swiper.about {
     height: 295px;
@@ -2288,6 +2324,7 @@
   .mediic-single-box {
     padding: 35px 25px 20px;
   }
+
   .mediic-icons {
     float: inherit;
     margin-bottom: 30px;
@@ -2339,6 +2376,7 @@
   .error-service-content {
     height: 630px;
   }
+
   .error-section {
     padding: 90px 0px 90px;
   }
@@ -2553,4 +2591,11 @@
   }
 
   /*  */
+}
+
+@media only screen and (min-width: 50px) and (max-width: 320px) {
+  
+  #sticky-header{
+    display: none;
+  }
 }

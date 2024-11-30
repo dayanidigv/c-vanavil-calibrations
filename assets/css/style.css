@@ -881,7 +881,8 @@ span.wood-animation img {
 
 .services-section {
   padding: 230px 0 90px;
-  background: url(../images/baclground.webp);
+  /* background: url(../images/baclground.webp); */
+  background: var(--primary-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -890,7 +891,7 @@ span.wood-animation img {
 .service-single-box {
   padding: 50px 35px 55px;
   margin-bottom: 30px;
-  background: var(--body-color);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   position: relative;
   z-index: 1;
