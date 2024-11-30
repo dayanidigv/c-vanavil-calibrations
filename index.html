@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Vanavil Calibrations - Health Care Doctor HTML5 Template</title>
+  <title>Vanavil Calibrations</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Favicon -->
@@ -38,17 +38,25 @@
   <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
   <script src="assets/js/swiper.min.js"></script>
+
+
+  <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/aos.css" />
+
+
+
 </head>
 
 <body>
   <!-- loder -->
-  <!-- <div class="loader-wrapper">
-      <div class="loader">
-        <h1>Loading...</h1>
-      </div>
-      <div class="loder-section left-section"></div>
-      <div class="loder-section right-section"></div>
-    </div> -->
+  <div class="loader-wrapper">
+    <div class="loader">
+      <img src="assets/images/Vanavil_logo.webp" style="width: 100%;" alt="logo" />
+    </div>
+    <div class="loder-section left-section"></div>
+    <div class="loder-section right-section"></div>
+  </div>
 
   <!-- Curser Pointer -->
   <div class="cursor"></div>
@@ -80,10 +88,15 @@
                 <a class="mdy-hover cursor-scale small" href="about.html">About Us</a>
               </li>
               <li>
-                <a class="mdy-hover cursor-scale small" href="#">Calibration</a>
+                <a class="mdy-hover cursor-scale small" href="#">Services</a>
+                <ul class="sub-menu">
+                  <li><a href="calibration.html">Calibration</a></li>
+                  <li><a href="validation.html">Validation</a></li>
+                  <li><a href="scope.html">Scope</a></li>
+                </ul>
               </li>
               <li>
-                <a class="mdy-hover cursor-scale small" href="#">Validation</a>
+                <a class="mdy-hover cursor-scale small" href="careers.html">Careers</a>
               </li>
               <li>
                 <a class="mdy-hover cursor-scale small" href="contact.html">Contact Us</a>
@@ -95,7 +108,7 @@
         <div class="col-lg-3 col-xl-3 text-end">
           <div class="mediic-button">
             <a href="appointment.html">
-              Get Appoinment
+              Get Touch with us
               <img src="assets/images/resource/arrow.png" alt="">
               <div class="mediic-hover-btn hover-btn"></div>
               <div class="mediic-hover-btn hover-btn2"></div>
@@ -117,8 +130,15 @@
             <a class="mdy-hover cursor-scale small" href="index.html">Home </a>
           </li>
           <li><a class="mdy-hover" href="about.html">About Us</a></li>
-          <li><a class="mdy-hover" href="#">Calibration</a></li>
-          <li><a class="mdy-hover" href="#">Validation</a></li>
+          <li>
+            <a class="mdy-hover" href="#">Services </a>
+            <ul class="sub-menu">
+              <li><a href="#">Calibration</a></li>
+              <li><a href="#">Validation</a></li>
+              <li><a href="#">Scope</a></li>
+            </ul>
+          </li>
+          <li><a class="mdy-hover" href="careers.html">Careers</a></li>
           <li><a class="mdy-hover" href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -135,11 +155,11 @@
   <div class="hero-section d-flex align-items-center">
     <div class="container">
       <div class="row hero-bg align-items-center">
-        <div class="col-lg-6 col-md-6 ">
+        <div class="col-lg-6 col-md-6 mt-5">
           <div class="hero-content">
             <h5 class="cursor-scale small">Accredited by</h5>
             <h1 class="cursor-scale">
-              National Accreditation Board for Testing and Calibration Laboratories.
+              NABL-National Accreditation Board for Testing and Calibration Laboratories.
             </h1>
             <div class="mediic-btn cursor-scale small">
               <a href="about.html">
@@ -147,24 +167,24 @@
                 <img src="assets/images/resource/arrow.png" alt="icon" /></a>
             </div>
             <div class="hero-mediic-service gap-4">
-              <div class="mediic-service-bx">
+              <div class="mediic-service-bx" data-aos="flip-right">
                 <div class="mediic-service-inner-bx">
                   <div class="mediic-hero-icon cursor-scale small">
                     <img src="assets/images/slider/tick.png" alt="icon" />
                   </div>
                   <div class="mediic-hero-content">
-                    <h4 class="cursor-scale small">50+</h4>
+                    <h4 class="cursor-scale small">500+</h4>
                     <p>Satisfied clients</p>
                   </div>
                 </div>
               </div>
-              <div class="mediic-service-bx">
+              <div class="mediic-service-bx" data-aos="flip-left">
                 <div class="mediic-service-inner-bx">
                   <div class="mediic-hero-icon cursor-scale small">
                     <img src="assets/images/slider/tick.png" alt="icon" />
                   </div>
                   <div class="mediic-hero-content">
-                    <h4 class="cursor-scale small">90%</h4>
+                    <h4 class="cursor-scale small">95%</h4>
                     <p> Satisfaction rates</p>
                   </div>
                 </div>
@@ -294,9 +314,9 @@
   <div class="about-section">
     <div class="container">
       <div class="row about-bg align-items-center">
-        <div class="col-lg-6 pl-0">
+        <div class="col-lg-6 pl-0" data-aos="zoom-in-right">
           <div class="about-thumb">
-            <img src="assets/images/about.jpg" alt="" />
+            <img src="assets/images/about1.jpg" alt="" height="100%" style="width: 500px; max-width:100%;" />
           </div>
         </div>
         <div class="col-lg-6 pr-0">
@@ -304,12 +324,11 @@
             <div class="mediic-section-title padding-0">
               <h4>About Vanavil Calibrations</h4>
               <h1>Trusted NABL-Accredited Calibration </h1>
-              <h1>Solutions Since <span>2004</span></h1>
+              <h1>with Over 3 Years of Expertise</h1>
             </div>
             <div class="mediic-desc">
               <p>
-                we’ve been delivering precise calibration solutions, serving industries with unparalleled
-                accuracy and trust. Accredited by NABL, our services cater to over + satisfied clients nationwide.
+                We’ve been delivering precise calibration solutions, serving hospitals and industries with unparalleled accuracy and trust. Accredited by NABL, our services cater to over 95% satisfied clients nationwide.
               </p>
             </div>
           </div>
@@ -317,27 +336,27 @@
           <div class="row mb-3">
             <div class="col-lg-12">
               <ul class="list-unstyled d-flex flex-column gap-3">
-                <li class="d-flex align-items-center gap-2">
+                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left">
                   <img src="assets/images/slider/tick.png" alt="" style="width: 25px; " />
                   Fully NABL Accredited
                 </li>
-                <li class="d-flex align-items-center gap-2">
+                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left">
                   <img src="assets/images/slider/tick.png" alt="" style="width: 25px; " />
                   Compliance with ISO/IEC 17025 Standards
                 </li>
-                <li class="d-flex align-items-center gap-2">
+                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left">
                   <img src="assets/images/slider/tick.png" alt="" style="width: 25px; " />
                   On-site and Laboratory Calibration Services
                 </li>
-                <li class="d-flex align-items-center gap-2">
+                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left">
                   <img src="assets/images/slider/tick.png" alt="" style="width: 25px; " />
                   Expert Technicians with Decades of Experience
                 </li>
-                <li class="d-flex align-items-center gap-2">
+                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left">
                   <img src="assets/images/slider/tick.png" alt="" style="width: 25px; " />
                   Advanced Equipment for Precision Testing
                 </li>
-                <li class="d-flex align-items-center gap-2">
+                <li class="d-flex align-items-center gap-2" data-aos="zoom-in-left">
                   <img src="assets/images/slider/tick.png" alt="" style="width: 25px; " />
                   Quick Turnaround & Reliable Support
                 </li>
@@ -345,85 +364,6 @@
             </div>
           </div>
 
-          <!--           
-            <div class="swiper about ">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide ">
-                  <div class="about-mediic-service" style="width: 100%;">
-                    <div class="about-icon">
-                      <img
-                        src="assets/images/slider/tick.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="about-content">
-                      <h3>Fully NABL Accredited</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide" style="height: 100%;">
-                  <div class="about-mediic-service" style="width: 100%;">
-                    <div class="about-icon">
-                      <img src="assets/images/slider/tick.png" alt="" />
-                    </div>
-                    <div class="about-content">
-                      <h3>Compliance with ISO/IEC 17025 Standards</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide" style="height: 100%;">
-                  <div class="about-mediic-service" style="width: 100%;">
-                    <div class="about-icon">
-                      <img src="assets/images/slider/tick.png" alt="" />
-                    </div>
-                    <div class="about-content">
-                      <h3>Compliance with ISO/IEC 17025 Standards</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="about-mediic-service" style="width: 100%;">
-                    <div class="about-icon">
-                      <img src="assets/images/slider/tick.png" alt="" />
-                    </div>
-                    <div class="about-content">
-                      <h3>On-site and Laboratory Calibration Services</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="about-mediic-service" style="width: 100%;">
-                    <div class="about-icon">
-                      <img src="assets/images/slider/tick.png" alt="" />
-                    </div>
-                    <div class="about-content">
-                      <h3>Expert Technicians with Decades of Experience</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="about-mediic-service" style="width: 100%;">
-                    <div class="about-icon">
-                      <img src="assets/images/slider/tick.png" alt="" />
-                    </div>
-                    <div class="about-content">
-                      <h3>Advanced Equipment for Precision Testing</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="about-mediic-service" style="width: 100%;">
-                    <div class="about-icon">
-                      <img src="assets/images/slider/tick.png" alt="" />
-                    </div>
-                    <div class="about-content">
-                      <h3>Quick Turnaround & Reliable Support</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div> -->
         </div>
       </div>
     </div>
@@ -448,7 +388,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="flip-right">
           <div class="service-single-box">
             <!-- <div class="service-head">
                 <div class="serivce-icon">
@@ -480,7 +420,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="flip-up">
           <div class="service-single-box">
             <!-- <div class="service-head">
               <div class="serivce-icon">
@@ -495,8 +435,8 @@
               <p>
                 Schedule your <b>calibration and
                   validation services</b> today!
-Call us for assistance—available
-24/7 for your convenience.
+                Call us for assistance—available
+                24/7 for your convenience.
               </p>
             </div>
             <div class="mediic-button">
@@ -511,7 +451,7 @@ Call us for assistance—available
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="flip-left">
           <div class="service-single-box">
             <!-- <div class="service-head">
               <div class="serivce-icon">
@@ -525,10 +465,10 @@ Call us for assistance—available
               <h4>Validations</h4>
               <p>
                 <b>Excellence in Validation</b>
-Our validation services ensure
-compliance with regulatory
-standards, enhancing your
-equipment’s reliability.
+                Our validation services ensure
+                compliance with regulatory
+                standards, enhancing your
+                equipment’s reliability.
 
               </p>
             </div>
@@ -551,6 +491,7 @@ equipment’s reliability.
   <!--==================================================-->
   <!-- End Mediic Motivation Section -->
   <!--==================================================-->
+
 
   <!--==================================================-->
   <!-- Start Mediic Portfolio Section -->
@@ -701,16 +642,13 @@ equipment’s reliability.
             </div>
             <div class="subscribe-title">
               <h1 class="cursor-scale small">
-                Since 2007 We’re working Medical group more than 1200+ Patient
+                A Unit of Rainbow Bio Medical Engineers
               </h1>
             </div>
           </div>
         </div>
         <div class="col-lg-5">
-          <div
-            class="mediic-button text-right cursor-scale small"
-            data-aos="fade-down"
-          >
+          <div class="mediic-button text-right cursor-scale small" data-aos="fade-down">
             <a href="contact.html" class="mediic-btn">
               <span class="mediic-btn__hover"></span>
               <span class="mediic-btn__hover"></span>
@@ -740,11 +678,14 @@ equipment’s reliability.
         <div class="col-lg-9 col-md-6">
           <div class="widget widgets-company-info">
             <div class="company-logo cursor-scale small">
-              <a href="index.html"><img src="assets/images/Vanavil_logo.webp" alt="logo" style="max-width: 300px; width:100%;"/></a>
+              <a href="index.html"><img src="assets/images/Vanavil_logo.webp" alt="logo"
+                  style="max-width: 300px; width:100%;" /></a>
             </div>
             <div class="company-info-desc">
               <p>
-                Vanavil Calibrations – Your NABL-accredited partner for precise calibration and validation services since 2004. Trusted by industries nationwide, we ensure accuracy, compliance, and reliability with every service.
+                Vanavil Calibrations – Your NABL-accredited partner for precise calibration and validation services
+                since 2004. Trusted by industries nationwide, we ensure accuracy, compliance, and reliability with
+                every service.
               </p>
             </div>
           </div>
@@ -758,16 +699,19 @@ equipment’s reliability.
                   <i class="bi bi-star-fill"></i><a href="about.html"> About Company </a>
                 </li>
                 <li>
-                  <i class="bi bi-star-fill"></i><a href="team.html"> Meet Our Team </a>
+                  <i class="bi bi-star-fill"></i><a href="calibration.html">Calibration</a>
                 </li>
                 <li>
-                  <i class="bi bi-star-fill"></i><a href="blog-grid.html"> Latest Blog </a>
+                  <i class="bi bi-star-fill"></i><a href="validation.html">Validation</a>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i><a href="scope.html">Scope of Service</a>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i><a href="careers.html">Careers</a>
                 </li>
                 <li>
                   <i class="bi bi-star-fill"></i><a href="contact.html"> Contact Us </a>
-                </li>
-                <li>
-                  <i class="bi bi-star-fill"></i><a href="testimonial.html"> Testimonial </a>
                 </li>
               </ul>
             </div>
@@ -815,15 +759,24 @@ equipment’s reliability.
   <!-- Start scrollup section Area -->
   <!--==================================================-->
 
+
+  <script src="assets/js/aos.js"></script>
+
+  <script src="assets/js/gsap.min.js"></script>
+
   <script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+
+  <script src="assets/js/ScrollTrigger.min.js"></script>
 
   <script src="assets/js/odometer.min.js"></script>
 
   <script src="assets/js/bootstrap.min.js"></script>
 
   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-
-  <script src="assets/js/gsap.min.js"></script>
 
   <script src="venobox/venobox.js"></script>
 

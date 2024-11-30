@@ -1367,6 +1367,7 @@
     background-position: center;
     background-size: cover;
     height: 1450px;
+    margin-top: 50px;
   }
 
   .hero-content h1 {
@@ -1778,6 +1779,8 @@
     background-position: center;
     background-size: cover;
     height: 1076px;
+    margin-top: 60px;
+
   }
 
   .hero-content h5 {

@@ -1,3 +1,7 @@
+//AOS Anomation
+AOS.init();
+
+
 // Curser Pointer
 
 let cursor = document.querySelector(".cursor");
@@ -5,6 +9,7 @@ let cursor2 = document.querySelector(".cursor2");
 let cursorScale = document.querySelectorAll(".cursor-scale");
 let mouseX = 0;
 let mouseY = 0;
+
 
 gsap.to({}, 0.016, {
   repeat: -1,
@@ -23,7 +28,6 @@ gsap.to({}, 0.016, {
     });
   },
 });
-
 // Mouse Pointer
 
 // Mouse Pointer
@@ -71,7 +75,10 @@ let scrollPercentage = () => {
   }
 
   scrollProgress.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
 };
 
