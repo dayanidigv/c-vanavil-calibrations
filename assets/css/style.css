@@ -128,6 +128,7 @@ a.mdy-hover {
   position: relative;
 }
 
+
 a.mdy-hover:before {
   position: absolute;
   content: "";
@@ -143,6 +144,13 @@ a.mdy-hover:before {
 
 a.mdy-hover:hover:before {
   opacity: 1;
+}
+
+a.mdy-hover.active::before {
+  opacity: 1;
+  transform: scale(1); 
+  background-color: #EE7B1C; 
+  color: #EE7B1C;
 }
 
 /*mediic Right Side*/
@@ -211,6 +219,8 @@ a.mdy-hover:hover:before {
   opacity: 1;
 }
 
+
+
 .mediic_menu ul .sub-menu li {
   position: relative;
 }
@@ -253,6 +263,14 @@ a.mdy-hover:hover:before {
 .mediic_menu ul .sub-menu .sub-menu .sub-menu li:hover>a,
 .mediic_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover>a {
   background: #007eff;
+  color: #fff !important;
+}
+
+.mediic_menu ul .sub-menu li .sctive>a,
+.mediic_menu ul .sub-menu .sub-menu li .sctive>a,
+.mediic_menu ul .sub-menu .sub-menu .sub-menu li .sctive>a,
+.mediic_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li .sctive>a {
+  background: #EE7B1C;
   color: #fff !important;
 }
 
@@ -2804,7 +2822,7 @@ ul.breatcome-item li a:hover {
   display: flex;
   background: var(--secondary-color);
   justify-content: center;
-  width: 549px;
+  /* width: 549px; */
   padding: 30px 0 20px;
   border-radius: 0 0 30px 30px;
 }
