@@ -1,0 +1,12 @@
+# Hide index file (index.html or index.php)
+RewriteEngine On
+
+# Redirect requests to index.php or index.html to the root folder
+RewriteCond %{THE_REQUEST} \s/+(index\.(php|html))\s [NC]
+RewriteRule ^(.*)/index\.(php|html)$ /$1 [R=301,L]
+
+# Prevent access to .htaccess file
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
