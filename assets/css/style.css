@@ -387,9 +387,10 @@ ul.sub-menu li:hover a span {
 .hero-thumb {
   position: relative;
   top: 52px;
-  left: 172px;
-  z-index: 2;
+  left: 280px;
+  z-index: 1;
 }
+
 
 /* Mediic___Service */
 
@@ -590,8 +591,8 @@ span.play-now:after {
 
 .hero-shape3 {
   position: absolute;
-  right: -71px;
-  bottom: 335px;
+  right: -100px;
+  bottom: 0px;
   z-index: 22;
 }
 
