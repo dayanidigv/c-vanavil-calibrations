@@ -2759,6 +2759,7 @@ label.widget-check {
 <!-- mediic Start Breatcome Secttion -->
 <!-- ============================================================== -->*/
 .breatcome-section {
+  background-image: url(../images/resource/breatcome.png);
   position: relative;
   height: 320px; /* Default height for all sections */
   background-size: cover;
@@ -2766,25 +2767,6 @@ label.widget-check {
   transition: background 0.5s ease-in-out; /* Smooth transition for background */
 }
 
-.breatcome-section.default {
-  background-image: url(../images/banner.jpg);
-}
-
-.breatcome-section.calibration {
-  background-image: url(../images/Calibration-back\ img.png);
-}
-
-.breatcome-section.validation {
-  background-image: url(../images/Validation-back-img.jpg);
-}
-
-.breatcome-section.scope {
-  background-image: url(../images/Scope-back-img.jpg);
-}
-
-.breatcome-section.about-us {
-  background-image: url(../images/About-us-back-img.jpg);
-}
 
 
 .breatcome-content {
@@ -2800,7 +2782,7 @@ label.widget-check {
 .breatcome-content h1 {
   filter: blur(0px);
   font-size: 55px;
-  color: var(--primary-color);
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px; /* Adding letter-spacing for better readability */
   margin: 0;
@@ -2810,14 +2792,14 @@ ul.breatcome-item li {
   list-style: none;
   display: inline-block;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: #fff;
   font-family: "DM Sans";
   font-size: 16px;
   padding: 10px 0 0;
 }
 
 ul.breatcome-item li a {
-  color: var(--primary-color);
+  color: #e5f1ff;
   transition: 0.5s;
   padding: 0 26px 0 0;
   position: relative;
@@ -5510,6 +5492,21 @@ span.flaticon-multiply i {
   border: 2px solid #ffffff;
   z-index: 1;
   transition: 0.5s;
+}
+
+.circle-opacity-box-border-rect{
+  border-radius: 10px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.30196078431372547);
+  border: 2px solid #ffffff;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.circle-opacity-box-border-rect:hover {
+  background-color: rgba(255, 255, 255, 0.6); /* Lighter background on hover */
+  transform: scale(1.05); /* Slightly enlarge the element */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .card-box {
