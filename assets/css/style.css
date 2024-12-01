@@ -405,8 +405,8 @@ ul.sub-menu li:hover a span {
 .hero-thumb {
   position: relative;
   top: 52px;
-  left: 280px;
-  z-index: 1;
+  left: 0px;
+  z-index: 2;
 }
 
 
@@ -596,8 +596,8 @@ span.play-now:after {
 
 .hero-shape2 {
   position: absolute;
-  bottom: 312px;
-  left: 124px;
+  bottom: 350px;
+  left: 277px;
   width: 100px;
   height: 100px;
   line-height: 100px;
@@ -609,8 +609,8 @@ span.play-now:after {
 
 .hero-shape3 {
   position: absolute;
-  right: -100px;
-  bottom: 0px;
+  right: -125px;
+  bottom: 350px;
   z-index: 22;
 }
 
@@ -2758,32 +2758,66 @@ label.widget-check {
 <!-- ============================================================== -->
 <!-- mediic Start Breatcome Secttion -->
 <!-- ============================================================== -->*/
-
 .breatcome-section {
-  background: url(../images/banner.jpg);
+  position: relative;
+  height: 320px; /* Default height for all sections */
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 420px;
+  background-position: center center;
+  transition: background 0.5s ease-in-out; /* Smooth transition for background */
+}
+
+.breatcome-section.default {
+  background-image: url(../images/banner.jpg);
+}
+
+.breatcome-section.calibration {
+  background-image: url(../images/Calibration-back\ img.png);
+}
+
+.breatcome-section.validation {
+  background-image: url(../images/Validation-back-img.jpg);
+}
+
+.breatcome-section.scope {
+  background-image: url(../images/Scope-back-img.jpg);
+}
+
+.breatcome-section.about-us {
+  background-image: url(../images/About-us-back-img.jpg);
+}
+
+
+.breatcome-content {
+  /* background: rgba(0, 0, 0, 0.303); 
+  filter: blur(0.3px); 
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.628); 
+  padding: 20px;
+
+  text-align: center; 
+  border-radius: 15px;  */
 }
 
 .breatcome-content h1 {
+  filter: blur(0px);
   font-size: 55px;
-  color: #fff;
+  color: var(--primary-color);
   text-transform: uppercase;
+  letter-spacing: 2px; /* Adding letter-spacing for better readability */
+  margin: 0;
 }
 
 ul.breatcome-item li {
   list-style: none;
   display: inline-block;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--primary-color);
   font-family: "DM Sans";
   font-size: 16px;
   padding: 10px 0 0;
 }
 
 ul.breatcome-item li a {
-  color: #fff;
+  color: var(--primary-color);
   transition: 0.5s;
   padding: 0 26px 0 0;
   position: relative;
@@ -5481,9 +5515,26 @@ span.flaticon-multiply i {
 .card-box {
   padding: 20px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.30196078431372547);
+  background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid #ffffff;
+  transition: all 0.3s ease-in-out; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  perspective: 1000px;
 }
+
+.card-box-hover {
+  display: inline-block; /* Ensure it's block level for transformations */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-box-hover:hover {
+  background-color: rgba(0, 21, 255, 0.3); /* Smooth background color change */
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: scale(1.05) rotateY(10deg) rotateX(-5deg); /* 3D rotation on hover */
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+
 
 .client-card-box{
   padding: 20px;
@@ -5531,4 +5582,94 @@ span.flaticon-multiply i {
 
 .text-justify {
   text-align: justify;
+}
+
+.card-3d:hover {
+  font-weight: bold;
+  padding: 1em;
+  color: #000000;
+  
+  background-color: l;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-in-out; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  perspective: 1000px;
+/* 
+  background: rgb(0,126,255);
+background: linear-gradient(196deg, rgba(0,37,112,1) 3%,  rgba(0,126,255,1) 62%);
+   */
+
+  
+  border-radius: 20px;
+
+  
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.card-3d:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-3d .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+
+
+.card-shape-area{
+  position: relative;
+}
+
+.card-shape{
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.30196078431372547);
+  border: 2px solid #ffffff;
+}
+
+
+
+
+
+/* Wood Animation */
+
+
+span.rotate-animation img {
+  animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-180deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-180deg);
+  }
 }

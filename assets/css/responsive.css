@@ -25,8 +25,9 @@
   }
 
   .hero-thumb {
-    z-index: 0;
+    z-index: 2;
   }
+
 
   .hero-shape3{
     right: 0px;
@@ -41,6 +42,7 @@
   .logo a img {
     width: 100%;
   }
+
 
   nav.mediic_menu {
     text-align: left;
@@ -62,8 +64,13 @@
   }
 
   .hero-thumb {
-    left: 150px;
-    z-index: 0;
+    left: -20px;
+    z-index: 2;
+  }
+
+  .hero-shape2{
+    left: 260px;
+    bottom: 350px;
   }
 
   .hero-shape3{
@@ -328,8 +335,13 @@
 
   .hero-thumb {
     top: 52px;
-    left: 50px;
-    z-index: 1;
+    left: -45px;
+    z-index: 2;
+  }
+
+  .hero-shape2{
+    left: 230px;
+    bottom: 350px;
   }
 
   .hero-shape3{
@@ -724,8 +736,18 @@
   }
 
   .hero-thumb {
-    left: -100px;
+    left: -150px;
     z-index: 1;
+    width: 40%;
+  }
+
+  .hero-shape{
+    display: none;
+  }
+
+  .hero-shape2{
+    top:-450px;
+    left: 125px;
   }
 
   .hero-shape3{
@@ -1069,6 +1091,10 @@
   .about-thumb{
     text-align: center;
   }
+
+  .hero-thumb {
+    z-index: 1;
+  }
 }
 
 /* small mobile :600px. */
@@ -1104,10 +1130,18 @@
   }
 
   .hero-thumb {
-    top: 0px;
+    top: 50px;
     left: 0;
     width: 150%;
-    z-index: 0;
+  }
+
+  .hero-shape{
+    display: none;
+  }
+
+  
+  .hero-shape2{
+    left: 250px;
   }
 
   .hero-shape3{
@@ -1450,12 +1484,15 @@
   .hero-thumb {
     top: 200px;
     left: 20px;
-    z-index: 0;
   }
 
   .hero-shape3{
     right: 0px;
     top: -750px;
+  }
+
+  .hero-shape{
+    display: none;
   }
 
   .hero-thumb img {
@@ -1895,14 +1932,17 @@
   }
 
   .hero-thumb {
-    top: 110px;
+    top: 200px;
     left: 0;
-    z-index: 0;
   }
 
   .hero-shape3{
     right: 0px;
     bottom: 150px;
+  }
+
+  .hero-shape{
+    display: none;
   }
 
   .hero-thumb img {
@@ -1913,8 +1953,8 @@
   }
 
   .hero-shape2 {
-    bottom: 245px;
-    left: 124px;
+    bottom: -60px;
+    left: 130px;
   }
 
   /* Brand Section */
