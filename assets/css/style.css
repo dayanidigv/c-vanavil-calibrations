@@ -5467,6 +5467,41 @@ span.flaticon-multiply i {
   border: 2px solid #ffffff;
 }
 
+.client-card-box{
+  padding: 20px;
+  /* border-radius: 20px; */
+  /* border: 2px solid #ffffff; */
+  /* filter:saturate(0); */
+}
+
+.client-card-box:hover{
+  /* border: 2px solid var(--primary-color); */
+  scale: 1.3;
+  /* filter:saturate(1); */
+  transition: all 0.5s ease;
+}
+
+/* .client-card-box:hover p {
+  white-space: normal;
+  max-height: 200px;
+  overflow: visible;
+  transition: all 1s ease;
+} */
+
+/* .client-card-box:hover .client-image{
+  scale: 0.6;
+  transition: all 1s ease;
+} */
+
+
+.client-image{
+  padding: 2px;
+  border-radius: 2px;
+  /* background-color: rgba(255, 255, 255, 0.30196078431372547); */
+  /* border: 2px solid #ffffff; */
+  transition: 0.5s;
+}
+
 .service-details {
   box-shadow: 6px 5px 30px rgba(255, 255, 255, 0.30196078431372547);
   padding: 20px;

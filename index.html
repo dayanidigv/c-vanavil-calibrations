@@ -45,7 +45,6 @@
   <link rel="stylesheet" href="assets/css/aos.css" />
 
 
-
 </head>
 
 <body>
@@ -329,7 +328,8 @@
             </div>
             <div class="mediic-desc">
               <p>
-                We’ve been delivering precise calibration solutions, serving hospitals and industries with unparalleled accuracy and trust. Accredited by NABL, our services cater to over 95% satisfied clients nationwide.
+                We’ve been delivering precise calibration solutions, serving hospitals and industries with unparalleled
+                accuracy and trust. Accredited by NABL, our services cater to over 95% satisfied clients nationwide.
               </p>
             </div>
           </div>
@@ -506,7 +506,7 @@
             <div class="swiper-slide">
               <div class="portfolio-single-box">
                 <div class="portfolio-thumb">
-                  <img src="assets/images/machine/Baby Warmer.webp" alt="img" width="100%"/>
+                  <img src="assets/images/machine/Baby Warmer.webp" alt="img" width="100%" />
                 </div>
                 <div class="portfolio-content">
                   <!-- <div class="port-icon">
@@ -646,6 +646,21 @@
   <!--==================================================-->
   <!-- End Mediic Portfolio Section -->
   <!--==================================================-->
+
+
+
+  <div class="container-field bd-bg mt-5 mb-5">
+    <div class="container bd-bg mx-auto px-4">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="cursor-scale display-5">Our Clients</h1>
+        </div>
+      </div>
+      <div class="row mt-2 d-flex justify-content-center align-items-center" id="client-img">
+
+      </div>
+    </div>
+  </div>
 
 
   <!--==================================================-->
@@ -815,6 +830,63 @@
   <script src="assets/js/theme.js"></script>
 
   <script src="assets/js/my.js"></script>
+
+  <script>
+    const clients = [{ 'title': 'Vinayaka Missions Kirupananda Variyar Medical College Salem', 'slug': 'vinayaka-missions-kirupananda-variyar-medical-college-salem', 'url': 'assets/images/client/Vinayaka-missions-kirupananda-variyar-medical-college-salem.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Vims Hospital Salem', 'slug': 'vims-hospital-salem', 'url': 'assets/images/client/VIMS-hospital-Salem.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Villupuram Govt. Medical College', 'slug': 'villupuram-govt.-medical-college', 'url': 'assets/images/client/Villupuram-govt.-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Tirunelveli Medical College', 'slug': 'tirunelveli-medical-college', 'url': 'assets/images/client/Tirunelveli-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2 h-100' },
+    { 'title': 'Uyirthuli Blood Bank Trichy', 'slug': 'uyirthuli-blood-bank-trichy', 'url': 'assets/images/client/Uyirthuli-Blood-Bank-Trichy.jpg', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
+    { 'title': 'Thootukudi Medical College', 'slug': 'thootukudi-medical-college', 'url': 'assets/images/client/Thootukudi-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Tcr Multispeciality Hospital Krishnagiri', 'slug': 'tcr-multispeciality-hospital-krishnagiri', 'url': 'assets/images/client/Tcr-Multispeciality-hospital-Krishnagiri.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'St Joseph Hospital Dindigul', 'slug': 'st-joseph-hospital-dindigul', 'url': 'assets/images/client/St-Joseph-Hospital-Dindigul.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Sri Gokulam Hospitals Salem', 'slug': 'sri-gokulam-hospitals-salem', 'url': 'assets/images/client/Sri-Gokulam-Hospitals-salem.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Sks Hospital Salem', 'slug': 'sks-hospital-salem', 'url': 'assets/images/client/Sks-hospital-salem.png', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
+    { 'title': 'Shifa Hospitals Tirunelveli', 'slug': 'shifa-hospitals-tirunelveli', 'url': 'assets/images/client/Shifa-Hospitals-Tirunelveli.png', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
+    { 'title': 'Sheela Hospitals Coimbatore', 'slug': 'sheela-hospitals-coimbatore', 'url': 'assets/images/client/Sheela-hospitals-Coimbatore.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Salem Steel Plant Hospital Salem', 'slug': 'salem-steel-plant-hospital-salem', 'url': 'assets/images/client/Salem-Steel-Plant-Hospital-Salem.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Revathi Hospital Tiruppur', 'slug': 'revathi-hospital-tiruppur', 'url': 'assets/images/client/Revathi-Hospital-Tiruppur.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Ramanagounder Medical Trust Coimbatore', 'slug': 'ramanagounder-medical-trust-coimbatore', 'url': 'assets/images/client/Ramanagounder-medical-trust-Coimbatore.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Kmc Trichy', 'slug': 'kmc-trichy', 'url': 'assets/images/client/KMC-Trichy.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Indian Red Cross Blood Bank Thanjavur', 'slug': 'indian-red-cross-blood-bank-thanjavur', 'url': 'assets/images/client/Indian-red-Cross-blood-bank-thanjavur.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Govt. Coimbatore Medical College', 'slug': 'govt.-coimbatore-medical-college', 'url': 'assets/images/client/Govt.-Coimbatore-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Govt. Theni Medical College', 'slug': 'govt.-theni-medical-college', 'url': 'assets/images/client/Govt.-theni-medical-college.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Gunam Hospitals Hosur', 'slug': 'gunam-hospitals-hosur', 'url': 'assets/images/client/Gunam-hospitals-Hosur.png', 'class': 'col-12 col-md-8 col-lg-6 col-xl-4' },
+    { 'title': 'Govt. Madurai Medical College', 'slug': 'govt.-madurai-medical-college', 'url': 'assets/images/client/Govt.-Madurai-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Govt Vellore Medical College', 'slug': 'govt-vellore-medical-college', 'url': 'assets/images/client/Govt-vellore-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Govt Sivagangai Medical College', 'slug': 'govt-sivagangai-medical-college', 'url': 'assets/images/client/Govt-sivagangai-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Govt Salem Medical College', 'slug': 'govt-salem-medical-college', 'url': 'assets/images/client/Govt-salem-medical-college.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Erode Lions Blood Bank Erode', 'slug': 'erode-lions-blood-bank-erode', 'url': 'assets/images/client/Erode-Lions-Blood-Bank-erode.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Arunai Medical College Hospital Tiruvannamalai', 'slug': 'arunai-medical-college-hospital-tiruvannamalai', 'url': 'assets/images/client/Arunai-Medical-college-hospital-Tiruvannamalai.png', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' },
+    { 'title': 'Annapoorana Medical College Salem', 'slug': 'annapoorana-medical-college-salem', 'url': 'assets/images/client/Annapoorana-Medical-College-Salem.jpg', 'class': 'col-6 col-md-4 col-lg-3 col-xl-2' }
+    ]
+    const clientImg = document.querySelector('#client-img');
+
+    // Generate slides
+    clients.forEach((client, index) => {
+      const AOS = index % 2 == 0 ? 'zoom-in-right' : 'zoom-in-left';
+      const slide = `
+           
+      <div class="${client.class} mb-4" data-aos="${AOS}">
+    <div class="client-card-box text-center p-3 h-100 d-flex flex-column justify-content-between">
+        <div class="client-image d-flex justify-content-center align-items-center mb-3">
+            <img 
+                src="${client.url}" 
+                alt="${client.title}" 
+                class="w-100 rounded"
+                style="max-height: 150px;" />
+        </div>
+        <!-- <p class="text-truncate fw-semibold">${client.title}</p> -->
+    </div>
+</div>
+
+    
+        `;
+      clientImg.innerHTML += slide;
+    });
+
+  </script>
+
 </body>
 
 </html>
